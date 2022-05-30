@@ -14,18 +14,18 @@ import java.util.stream.Collectors;
 
         public  ProductRepo() {
             productList = new ArrayList<>();
-            productList.add(new Product(1, "Lemon", 190.00));
-            productList.add(new Product(2, "Carrot",84.00 ));
-            productList.add(new Product(3, "Onion", 55.00));
-            productList.add(new Product(4, "Melon", 90.00));
-            productList.add(new Product(5, "Garlic", 120.00));
+            productList.add(new Product(1L, "Lemon", 190.00));
+            productList.add(new Product(2L, "Carrot",84.00 ));
+            productList.add(new Product(3L, "Onion", 55.00));
+            productList.add(new Product(4L, "Melon", 90.00));
+            productList.add(new Product(5L, "Garlic", 120.00));
         }
 
         public List<Product> getProductList() {
             return productList;
         }
 
-        public Product getProduct(int id) {
+        public Product getProduct(long id) {
             try {
                 return productList
                         .stream()

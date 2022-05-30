@@ -24,7 +24,7 @@ public class Cart {
     }
 
 
-    public void removeProductInCartById(ProductRepo repo, int id) {
+    public void removeProductInCartById(ProductRepo repo, long id) {
         Product product = repo.getProduct(id);
         if (product != null) {
             if (productCart.contains(product)) {
@@ -38,7 +38,7 @@ public class Cart {
         }
     }
 
-        public void addProductById(ProductRepo repo, int id) {
+        public void addProductById(ProductRepo repo, long id) {
             Product product = repo.getProduct(id);
             if (product != null) {
                 productCart.add(product);
